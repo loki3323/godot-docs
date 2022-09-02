@@ -28,18 +28,18 @@ For those unfamiliar with it, it can be explained with a few facts:
 - For every 6 dB, sound amplitude doubles or halves. 12 dB represents a factor
   of 4, 18 dB a factor of 8, 20 dB a factor of 10, 40 dB a factor of 100, etc.
 - Since the scale is logarithmic, true zero (no audio) can't be represented.
-- 0 dB is the maximum amplitude possible in a digital audio system.
+- 0 dBFS is the maximum amplitude possible in a digital audio system.
   This limit is not the human limit, but a limit from the sound hardware.
-  Audio with amplitudes that are too high to be represented properly below 0 dB
+  Audio with amplitudes that are too high to be represented properly below 0 dBFS
   create a kind of distortion called *clipping*.
 - To avoid clipping, your sound mix should be arranged so that the output of the
-  *master bus* (more on that later) never exceeds 0 dB.
+  *master bus* (more on that later) never exceeds 0 dBFS.
 - Every 6 dB below the 0 dB limit, sound energy is *halved*.
   It means the sound volume at -6 dB is half as loud as 0dB.
   -12 dB is half as loud as -6 dB and so on.
 - When working with decibels, sound is considered no longer audible
-  between -60 dB and -80 dB. This makes your working range generally
-  between -60 dB and 0 dB.
+  between -60 dBFS and -80 dBFS. This makes your working range generally
+  between -60 dBFS and 0 dBFS.
 
 This can take a bit getting used to, but it's friendlier in the end
 and will allow you to communicate better with audio professionals.
